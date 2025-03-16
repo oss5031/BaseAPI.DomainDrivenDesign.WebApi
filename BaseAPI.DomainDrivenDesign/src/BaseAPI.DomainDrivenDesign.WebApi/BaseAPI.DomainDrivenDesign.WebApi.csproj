@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="App_Config\" />
+    <None Remove="Mapping\" />
+    <None Remove="Mapping\WeatherForecast\" />
+    <None Remove="Middlewares\" />
+    <None Remove="Models\" />
+    <None Remove="Models\WeatherForecast\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Config\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Mapping\WeatherForecast\" />
+    <Folder Include="Middlewares\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\WeatherForecast\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseAPI.DomainDrivenDesign.Application\BaseAPI.DomainDrivenDesign.Application.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\BaseAPI.DomainDrivenDesign.Infrastructure\BaseAPI.DomainDrivenDesign.Infrastructure.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

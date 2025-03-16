@@ -1,0 +1,5 @@
+﻿{
+    "ConnectionStrings": {
+        "DefaultConnection": "Server=localhost;Database=StoreExample;Trusted_Connection=False;User=sa;Password=12345ABCdef;TrustServerCertificate=True;"
+    }
+}

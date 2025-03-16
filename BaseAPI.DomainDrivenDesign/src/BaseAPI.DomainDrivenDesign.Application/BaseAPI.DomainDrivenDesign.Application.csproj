@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>BaseAPI.DomainDrivenDesign.Application</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Services\Interfaces\" />
+    <None Remove="Mapping\" />
+    <None Remove="Models\" />
+    <None Remove="Models\WeatherForecast\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\WeatherForecast\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseAPI.DomainDrivenDesign.Domain\BaseAPI.DomainDrivenDesign.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+</Project>

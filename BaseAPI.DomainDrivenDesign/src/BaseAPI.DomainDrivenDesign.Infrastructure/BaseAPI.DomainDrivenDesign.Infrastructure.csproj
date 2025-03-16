@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>BaseAPI.DomainDrivenDesign.Infrastructure</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Context\" />
+    <None Remove="Mapping\" />
+    <None Remove="Repositories\" />
+    <None Remove="Context\Configuration\" />
+    <None Remove="Mapping\WeatherForecast\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Context\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Repositories\" />
+    <Folder Include="Context\Configuration\" />
+    <Folder Include="Mapping\WeatherForecast\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BaseAPI.DomainDrivenDesign.Domain\BaseAPI.DomainDrivenDesign.Domain.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.3" />
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6DF2418D-B5C0-4645-8F9A-6D9292933863}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{4B33E820-B3C0-49A4-AEE5-5B167FBED0C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{28313C9A-B4DB-4840-9BD0-123928F3B2AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAPI.DomainDrivenDesign.WebApi", "src\BaseAPI.DomainDrivenDesign.WebApi\BaseAPI.DomainDrivenDesign.WebApi.csproj", "{881CEE0C-9CFC-416F-8CEE-0E4B52DE6B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAPI.DomainDrivenDesign.Infrastructure", "src\BaseAPI.DomainDrivenDesign.Infrastructure\BaseAPI.DomainDrivenDesign.Infrastructure.csproj", "{23B28D8F-7514-4E54-A183-0FF6390E1715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAPI.DomainDrivenDesign.Domain", "src\BaseAPI.DomainDrivenDesign.Domain\BaseAPI.DomainDrivenDesign.Domain.csproj", "{96CD4736-C95D-47F8-8162-18148BBFC28F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAPI.DomainDrivenDesign.Application", "src\BaseAPI.DomainDrivenDesign.Application\BaseAPI.DomainDrivenDesign.Application.csproj", "{D9657750-D21D-4E48-A5A7-A215C18F65F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseAPI.DomainDrivenDesign.Database", "database\BaseAPI.DomainDrivenDesign.Database\BaseAPI.DomainDrivenDesign.Database.csproj", "{A689389D-E057-4AFA-8113-8271816D0AD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{881CEE0C-9CFC-416F-8CEE-0E4B52DE6B85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881CEE0C-9CFC-416F-8CEE-0E4B52DE6B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881CEE0C-9CFC-416F-8CEE-0E4B52DE6B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881CEE0C-9CFC-416F-8CEE-0E4B52DE6B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23B28D8F-7514-4E54-A183-0FF6390E1715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23B28D8F-7514-4E54-A183-0FF6390E1715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23B28D8F-7514-4E54-A183-0FF6390E1715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23B28D8F-7514-4E54-A183-0FF6390E1715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96CD4736-C95D-47F8-8162-18148BBFC28F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96CD4736-C95D-47F8-8162-18148BBFC28F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96CD4736-C95D-47F8-8162-18148BBFC28F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96CD4736-C95D-47F8-8162-18148BBFC28F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9657750-D21D-4E48-A5A7-A215C18F65F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9657750-D21D-4E48-A5A7-A215C18F65F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9657750-D21D-4E48-A5A7-A215C18F65F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9657750-D21D-4E48-A5A7-A215C18F65F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A689389D-E057-4AFA-8113-8271816D0AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A689389D-E057-4AFA-8113-8271816D0AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A689389D-E057-4AFA-8113-8271816D0AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A689389D-E057-4AFA-8113-8271816D0AD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7636A02-507A-43CC-865A-1771699A755A}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{881CEE0C-9CFC-416F-8CEE-0E4B52DE6B85} = {6DF2418D-B5C0-4645-8F9A-6D9292933863}
+		{23B28D8F-7514-4E54-A183-0FF6390E1715} = {6DF2418D-B5C0-4645-8F9A-6D9292933863}
+		{96CD4736-C95D-47F8-8162-18148BBFC28F} = {6DF2418D-B5C0-4645-8F9A-6D9292933863}
+		{D9657750-D21D-4E48-A5A7-A215C18F65F4} = {6DF2418D-B5C0-4645-8F9A-6D9292933863}
+		{A689389D-E057-4AFA-8113-8271816D0AD3} = {4B33E820-B3C0-49A4-AEE5-5B167FBED0C2}
+	EndGlobalSection
+EndGlobal
