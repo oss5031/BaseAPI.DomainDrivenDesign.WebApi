@@ -3,6 +3,8 @@ using BaseAPI.DomainDrivenDesign.Application.Services.Interfaces;
 using BaseAPI.DomainDrivenDesign.Domain.Repositories;
 using BaseAPI.DomainDrivenDesign.Infrastructure.Context;
 using BaseAPI.DomainDrivenDesign.Infrastructure.Repositories;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,7 +15,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies()); // AutoMapper
+
+builder.Services.AddFluentValidationAutoValidation(); // FluentValidation
+builder.Services.AddValidatorsFromAssemblies(AppDomain.CurrentDomain.GetAssemblies());
 
 // Services
 builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();

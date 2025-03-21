@@ -11,6 +11,9 @@
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="7.3.1" />
     <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.11.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="App_Config\" />
@@ -19,6 +22,8 @@
     <None Remove="Middlewares\" />
     <None Remove="Models\" />
     <None Remove="Models\WeatherForecast\" />
+    <None Remove="Validators\" />
+    <None Remove="Validators\WeatherForecast\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Config\" />
@@ -27,6 +32,8 @@
     <Folder Include="Middlewares\" />
     <Folder Include="Models\" />
     <Folder Include="Models\WeatherForecast\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Validators\WeatherForecast\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BaseAPI.DomainDrivenDesign.Application\BaseAPI.DomainDrivenDesign.Application.csproj">

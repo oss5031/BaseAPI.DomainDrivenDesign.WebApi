@@ -57,7 +57,7 @@ public class WeatherForecastController : ControllerBase
     {
         if (requestModel == null)
         {
-            return BadRequest("Invalid data.");
+            return BadRequest("Invalid request data.");
         }
 
         var weatherForecastDto = mapper.Map<CreateWeatherForecastDto>(requestModel);
